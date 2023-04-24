@@ -58,6 +58,19 @@ section, .flex{
    text-transform: uppercase;
 }
 
+.header img{
+   width: 80px;
+   height: 80px;
+   padding: 0;
+   margin: 0;
+}
+
+.top{
+   padding: 0;
+   margin: 0;
+   margin-left: 19%;
+}
+
 .btn{
    display: block;
    width: 100%;
@@ -104,7 +117,7 @@ section, .flex{
 
 .header .flex .navbar a:hover{
    text-decoration: underline;
-   background-image: linear-gradient(to bottom right, mediumaquamarine, skyblue, pink);
+   color: skyblue;
 }
 
 .header .flex div{
@@ -358,8 +371,8 @@ color:white;
 
 .faq .accordion-container .accordion .accordion-heading{
    padding:1.5rem;
-   background: var(--black);
-   color:var(--white);
+   background: rgb(218, 148, 145);
+   color:var(--black);
    cursor: pointer;
    font-size: 2rem;
    display: flex;
@@ -382,7 +395,7 @@ color:white;
 }
 
 .faq .accordion-container .accordion.active .accordion-heading{
-   background-color: #E78C89;
+   background-image: linear-gradient(to bottom right, mediumaquamarine, skyblue, pink);
 }
 
 .faq .accordion-container .accordion.active .accordion-heading i{
@@ -448,6 +461,12 @@ color:white;
    background-color: white;
 }
 
+.home-bg img{
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+}
+
 
 /* menu */
 .display-orders h1{
@@ -488,8 +507,13 @@ color:white;
    font-size: 30px;
 }
 
-.one, .two, .four, .five, .seven, .eight, .ten, .eleven, .thirteen, .fourteen{
+.one, .two, .four, .five, .seven, .eight, .ten, .eleven{
    margin-right: 12px;
+}
+
+.ten, .eleven, .twelve{
+   margin-top: 0;
+   padding-top: 0;
 }
 
 button {

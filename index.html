@@ -20,10 +20,10 @@
 
 <header class="header">
 
-   <div class="flex">
+   <div class="flex top">
       
 
-      <a href="#"><img src=""></a>
+      <a href="#"><img src="https://i.ibb.co/tptckNK/Faqs.png"></a>
 
       <nav class="navbar">
          <a href="#">Home</a>
@@ -39,7 +39,14 @@
 
 <!-- header section ends -->
 
-<br><br><br><br>
+<br><br><br><br><br>
+
+<div class="home-bg">
+
+   <img src="https://lh3.googleusercontent.com/pw/AJFCJaWvG3ca5Pl4kXgX4bRu-5z1MbYSyzCsbAxHaP-gmf4ZjOmRI-rcQwig9nvzKb6YCMYLMiDM2Qeg5eMQjxzQ7-SdLQqn3qIclHPyWyb5bkqoKJo8CBs=w2400" alt="powerpuff header">
+
+</div>
+
 
 <!-- about section starts  -->
 
@@ -276,8 +283,7 @@
                      <button type="button" onclick="add(8)">+</button>
                   </div>
                   <div class="description">
-                     <p>A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped
-                           cream, a rich mascarpone cheese, and flavoured with cocoa.<br><br><br>
+                     <p>A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream, a rich mascarpone cheese, and flavoured with cocoa.<br><br><br>
                      </p>
                   </div>
                </div>
@@ -304,6 +310,75 @@
                      </p>
                   </div>
                </div>
+
+               <br><br><br><br><br>
+               <h1>BEVERAGES</h1>
+               <br>
+               
+               <div class="card ten">
+                  <div class="image">
+                     <br>
+                     <img id="food10"
+                           src="https://i.ibb.co/0Yz0CPQ/Untitled-design-12.png"
+                           alt="IcedShakenDragonTea">
+                  </div>
+                  <div class="title">
+                     <h1>Iced Shaken Dragon Tea</h1>
+                     <h1><small>195.00 Php</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(10)">-</button>
+                     <button id="food10num" type="button">0</button>
+                     <button type="button" onclick="add(10)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>This drink features coconut milk sweetened with real dragon fruit juice and wildberry-flavored syrups, topped and served with real slices of blueberries and raspberries, shaken over ice. <br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card eleven">
+                  <div class="image">
+                     <br>  
+                     <img id="food11" src="https://i.ibb.co/qp8BdW3/Untitled-design-15.png"
+                        alt="PistachioCreamFrapuccino">
+                  </div>
+                  <div class="title">
+                     <h1>Pistachio Cream Frapuccino</h1>
+                     <h1><small>265.00 Php</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(11)">-</button>
+                     <button id="food11num" type="button">0</button>
+                     <button type="button" onclick="add(11)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>This drink features a sweet pistachio-flavored concentrate blended with sweetened whole milk and ice, finished with whipped cream and a salted brown-buttery topping.<br><br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card twelve">
+                  <div class="image">
+                     <br>
+                     <img id="food12" src="https://i.ibb.co/C6HZX4v/Untitled-design-16.png"
+                        alt="SpanishLatte">
+                  </div>
+                  <div class="title">
+                     <h1>Spanish Latte</h1>
+                     <h1><small>225.00 Php</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(12)">-</button>
+                     <button id="food12num" type="button">0</button>
+                     <button type="button" onclick="add(12)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>Our Spanish latte is an increasingly popular espresso-based milk beverage that combines espresso shots with regular milk and condensed milk. Like a standard latte, you can enjoy it hot or iced.<br><br><br>
+                     </p>
+                  </div>
+               </div>
+
             </div>
          </div>
 
@@ -407,9 +482,7 @@
             <i class="fas fa-angle-down"></i>
          </div>
          <p class="accrodion-content">
-            Weekdays: 9 AM - 10 PM 
-            <br>
-            Weekends: 8 AM - 9 PM
+            Weekdays: 9 AM - 10 PM || Weekends: 8 AM - 9 PM
          </p>
       </div>
 
@@ -433,6 +506,25 @@
          </p>
       </div>
 
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Where are your references?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Worry not! Here they are!<br><br>
+
+            https://www.youtube.com/watch?v=6tt8MUsUcd0<br>
+            https://www.youtube.com/watch?v=GiWJQOin5dk<br>
+            https://codevoweb.com/lc26-build-food-ordering-website-html-css-javascript/<br>
+            https://www.w3schools.com/tags/att_input_type_hidden.asp<br>
+            https://www.canva.com<br>
+            https://www.pinterest.com
+            
+
+         </p>
+      </div>
+
    </div>
 
 </section>
@@ -448,27 +540,31 @@
       <div class="box">
          <i class="fas fa-phone"></i>
          <h3>phone number</h3>
-         <p>+123-456-7890</p>
-         <p>+111-222-3333</p>
+         <p>+63-969-609-8887</p>
+         <p>+63-961-296-1888</p>
+         <p>+63-927-864-7372</p>
       </div>
 
       <div class="box">
          <i class="fas fa-map-marker-alt"></i>
-         <h3>our address</h3>
-         <p>mumbai, india - 400104</p>
+         <h3>Our Address</h3>
+         <p>Railway HWY, Blossom Street, Blossom Province, besides Buttercup and accross Predator</p>
       </div>
 
       <div class="box">
          <i class="fas fa-clock"></i>
          <h3>opening hours</h3>
-         <p>00:09am to 00:10pm</p>
+         <p>Weekdays: 9 AM - 10 PM</p>
+         <p>Weekends: 8 AM - 9 PM</p>
+         <br><br>
       </div>
 
       <div class="box">
          <i class="fas fa-envelope"></i>
          <h3>email address</h3>
-         <p>shaikhanas@gmail.com</p>
-         <p>anasbhai@gmail.com</p>
+         <p>celagio2026@clc.pshs.edu.ph</p>
+         <p>jocampo2026@clc.pshs.edu.ph</p>
+         <p>cdizon2026@clc.pshs.edu.ph</p>
       </div>
 
    </div>

@@ -1,19 +1,19 @@
 let accordion = document.querySelectorAll('.faq .accordion-container .accordion');
 
-accordion.forEach(acco =>{
-   acco.onclick = () =>{
-      accordion.forEach(remove => remove.classList.remove('active'));
-      acco.classList.add('active');
-   }
+accordion.forEach(acco => {
+    acco.onclick = () => {
+        accordion.forEach(remove => remove.classList.remove('active'));
+        acco.classList.add('active');
+    }
 });
 
 /* menu */
-var a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j=0, k=0, l=0, foodname = 0, foodprice = 0, totalfoodprice = 0, foodcart = [];
+var a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j = 0, k = 0, l = 0, foodname = 0, foodprice = 0, totalfoodprice = 0, foodcart = [];
 function formSubmit() {
     while (a > 0) {
         var foodcartobject1 = {
-        foodname: "Italian Carbonara",
-        foodprice: 320,
+            foodname: "Italian Carbonara",
+            foodprice: 320,
         }
         foodcart.push(foodcartobject1);
         a--;
@@ -81,6 +81,30 @@ function formSubmit() {
         }
         foodcart.push(foodcartobject9);
         i--;
+    }
+    while (j > 0) {
+        var foodcartobject10 = {
+            foodname: "Iced Shaken Dragon Tea",
+            foodprice: 195,
+        }
+        foodcart.push(foodcartobject10);
+        j--;
+    }
+    while (k > 0) {
+        var foodcartobject11 = {
+            foodname: "Pistachio Cream Frapuccino",
+            foodprice: 265,
+        }
+        foodcart.push(foodcartobject11);
+        k--;
+    }
+    while (l > 0) {
+        var foodcartobject12 = {
+            foodname: "Spanish Latte",
+            foodprice: 225,
+        }
+        foodcart.push(foodcartobject12);
+        l--;
     }
     foodcartstring = JSON.stringify(foodcart);
     document.getElementById('foodcart').value = JSON.stringify(foodcart);
@@ -160,6 +184,30 @@ function add(x) {
         totalfoodprice = totalfoodprice + 115;
         fooditemandprice.className = "food9";
     }
+    if (x == 10) {
+        j++;
+        document.getElementById("food" + x + "num").innerHTML = j;
+        foodname = "Iced Shaken Dragon Tea";
+        foodprice = 195;
+        totalfoodprice = totalfoodprice + 195;
+        fooditemandprice.className = "food10";
+    }
+    if (x == 11) {
+        k++;
+        document.getElementById("food" + x + "num").innerHTML = k;
+        foodname = "Pistachio Cream Frapuccino";
+        foodprice = 265;
+        totalfoodprice = totalfoodprice + 265;
+        fooditemandprice.className = "food11";
+    }
+    if (x == 12) {
+        l++;
+        document.getElementById("food" + x + "num").innerHTML = l;
+        foodname = "Spanish Latte";
+        foodprice = 225;
+        totalfoodprice = totalfoodprice + 225;
+        fooditemandprice.className = "food12";
+    }
     document.getElementById("totalprice").innerHTML = "₱" + totalfoodprice;
     const item = document.createTextNode(foodname);
     divprice.className = "foodprice";
@@ -233,6 +281,27 @@ function subtract(x) {
         totalfoodprice = totalfoodprice - 115;
         const foodi = document.getElementsByClassName("food9");
         foodi[0].remove();
+    }
+    if (x == 10 && j > 0) {
+        j--;
+        document.getElementById("food" + x + "num").innerHTML = j;
+        totalfoodprice = totalfoodprice - 195;
+        const foodj = document.getElementsByClassName("food10");
+        foodj[0].remove();
+    }
+    if (x == 11 && k > 0) {
+        k--;
+        document.getElementById("food" + x + "num").innerHTML = k;
+        totalfoodprice = totalfoodprice - 265;
+        const foodk = document.getElementsByClassName("food11");
+        foodk[0].remove();
+    }
+    if (x == 12 && l > 0) {
+        l--;
+        document.getElementById("food" + x + "num").innerHTML = l;
+        totalfoodprice = totalfoodprice - 225;
+        const foodl = document.getElementsByClassName("food12");
+        foodl[0].remove();
     }
     document.getElementById("totalprice").innerHTML = "₱" + totalfoodprice;
 }
