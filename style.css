@@ -467,6 +467,11 @@ color:white;
    background-size: cover;
 }
 
+.cart h1{
+   color: var(--light-color);
+   font-size: 1.8rem;
+}
+
 
 /* menu */
 .display-orders h1{
