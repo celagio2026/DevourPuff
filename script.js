@@ -10,7 +10,6 @@ accordion.forEach(acco =>{
 /* menu */
 var a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j=0, k=0, l=0, foodname = 0, foodprice = 0, totalfoodprice = 0, foodcart = [];
 function formSubmit() {
-    document.getElementById("restoname").value = "DevourPuff";
     while (a > 0) {
         var foodcartobject1 = {
         foodname: "Italian Carbonara",
@@ -84,8 +83,7 @@ function formSubmit() {
         i--;
     }
     foodcartstring = JSON.stringify(foodcart);
-    document.getElementById("foodcart").value = foodcartstring;
-
+    document.getElementById('foodcart').value = JSON.stringify(foodcart);
 }
 function add(x) {
     const divprice = document.createElement("div");
