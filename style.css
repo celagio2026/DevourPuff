@@ -444,6 +444,10 @@ color:white;
    color: var(--red);
 }
 
+.accrodion-content{
+   background-color: white;
+}
+
 
 /* menu */
 .display-orders h1{

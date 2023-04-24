@@ -134,8 +134,8 @@ function add(x) {
         f++;
         document.getElementById("food" + x + "num").innerHTML = f;
         foodname = "Chicken Alfredo";
-        foodprice = 350;
-        totalfoodprice = totalfoodprice + 350;
+        foodprice = 370;
+        totalfoodprice = totalfoodprice + 370;
         fooditemandprice.className = "food6";
     }
     if (x == 7) {
