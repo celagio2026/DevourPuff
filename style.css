@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap');
+
+:root{
+   --red:#e74c3c;
+   --black:#333;
+   --white:#fff;
+   --light-bg:#f5f5f5;
+   --light-color:#666;
+   --border:.1rem solid var(--light-color);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: .2s linear; 
+}
+
+::-webkit-scrollbar{
+   width: 1rem;
+   height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--red);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 7.5rem;
+}
+
+body{
+   background: var(--light-bg);
+   overflow-x: hidden;
+}
+
+section, .flex{
+   padding:2rem;
+   margin:0 auto;
+   max-width: 1200px;
+}
+
+.heading{
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 4rem;
+   color:var(--black);
+   text-transform: uppercase;
+}
+
+.btn{
+   display: block;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   padding:1rem 3rem;
+   font-size: 2rem;
+   color:var(--white);
+   background-color: var(--red);
+   cursor: pointer;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.btn:hover{
+   background-color:var(--black);
+}
+
+.header{
+   position: fixed;
+   top:0; left:0; right:0;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   z-index: 1000;
+}
+
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.header .flex .logo{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.header .flex .navbar a{
+   margin:0 1rem;
+   font-size: 2.2rem;
+   color:var(--black);
+}
+
+.header .flex .navbar a:hover{
+   text-decoration: underline;
+   color:var(--red);
+}
+
+.header .flex div{
+   font-size: 2.5rem;
+   color:var(--light-color);
+   cursor: pointer;
+   margin-left: 1.7rem;
+}
+
+.header .flex div:hover{
+   color:var(--red);
+}
+
+.header .flex .icons div span{
+   font-size: 2rem;
+}
+
+
+#menu-btn{
+   display: none;
+}
+
+.home-bg img{
+   position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 1080px;
+}
+
+.about .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.about .box-container .box{
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding:2rem;
+   text-align: center;
+   box-shadow: var(--box-shadow);
+}
+
+.about .box-container .box img{
+   width: 100%;
+   margin-bottom: 2rem;
+}
+
+.about .box-container .box h3{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.about .box-container .box p{
+   padding:1rem 0;
+   line-height: 2;
+   font-size: 1.6rem;
+   color:var(--light-color);
+}
+
+.order form{
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   padding:2rem;
+   border-radius: .5rem;
+}
+
+.order form .display-orders{
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   margin-bottom: 2rem;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   padding:3rem 2rem;
+   background-color: var(--light-bg);
+   border-radius: .5rem;
+}
+
+.order form .display-orders p{
+   font-size: 2rem;
+   color:var(--light-color);
+   background-color: var(--white);
+   padding:1rem 3rem;
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
+}
+
+.order form .display-orders p span{
+   color:var(--red);
+}
+
+.order form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap:1.5rem;
+   justify-content: space-between;
+}
+
+.order form .flex .inputBox{
+   width: 49%;
+}
+
+.order form .flex .inputBox span{
+   font-size: 1.8rem;
+   color:var(--light-color);
+}
+
+label{
+   font-size: 1.8rem;
+   color:var(--light-color);
+}
+
+.order form .flex .inputBox .box{
+   width: 100%;
+   background-color: var(--light-bg);
+   padding:1.4rem;
+   font-size: 1.8rem;
+   color:var(--black);
+   border-radius: .5rem;
+   margin:1rem 0;
+}
+
+/* Radio CSS start */
+
+.input_wrap{
+   width: 49%;
+   padding:1.4rem;
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   margin:1rem 0;
+   padding-left: 0;
+   margin-left: 0;
+}
+
+.form_wrap .input_wrap{
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.form_wrap .input_wrap:last-child{
+   margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label{
+   color: #1a1a1f;
+   display: block;
+}
+
+.form_wrap .input_grp{
+   display: flex;
+   justify-content: space-between;
+}
+ 
+/* Whole Sex Choice CSS */
+li::marker{
+   color: white;
+}
+
+.form_wrap ul{
+   padding: 5px;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   border: 1px solid rgb(220, 220, 220);
+   width: 100%;
+   background: rgb(255, 255, 255);
+   margin-top: 1.5%;
+   margin-bottom: 3%;
+}
+
+.form_wrap ul .radio_wrap{
+   position: relative;
+   margin-bottom: 0;
+}
+
+.form_wrap li{
+   padding-right: 20px;
+}
+
+/* Main Choices CSS (fix position and format) */
+.form_wrap ul .radio_wrap .input_radio{
+position: absolute;
+top: 0;
+right: 0;
+opacity: 0;
+}
+
+/* Main Choices CSS */
+.form_wrap ul .radio_wrap span{
+display: inline-block;
+font-size: 17px;
+padding: 2.5px 20px;
+border-radius: 15px;
+color: black;
+}
+
+/* Sex Identifier Clicker Thingy */
+.form_wrap .input_radio:checked ~ span{
+   background: #ED5C9B;
+   color:white;
+}
+
+.reasons{
+   padding-bottom: 2px;
+}
+
+/* Submit Button */
+.form_wrap .submit_btn{
+font-size:17px;
+border-radius: 5px;
+text-transform: uppercase;
+letter-spacing: 2px;
+cursor: pointer;
+width: 100%;
+background: #E0218A;
+padding: 10px;
+border: 0;
+color:white;
+}
+/* Button Hover effect */
+.form_wrap .submit_btn:hover{
+   background: #f18dbc;
+}
+
+.fullname, .emailadd, .sex, .grade, .reasons{
+   font-weight: 600;
+}
+
+.emaildiv, .sexdiv, .gradesdiv, .reasonsdiv{
+   padding-top: 10px;
+}
+
+.namediv{
+   padding-top: 30px;
+}
+
+/* Radio CSS end */
+
+.faq .accordion-container{
+   max-width: 70rem;
+   margin:0 auto;
+}
+
+.faq .accordion-container .accordion{
+   margin:1.5rem 0;
+   box-shadow: var(--box-shadow);
+}
+
+.faq .accordion-container .accordion .accordion-heading{
+   padding:1.5rem;
+   background: var(--black);
+   color:var(--white);
+   cursor: pointer;
+   font-size: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:1.5rem;
+}
+
+.faq .accordion-container .accordion .accrodion-content{
+   padding:2rem;
+   background-color: var(--white);
+   line-height: 2;
+   color:var(--light-color);
+   font-size: 1.6rem;
+   display: none;
+}
+
+.faq .accordion-container .accordion.active .accrodion-content{
+   display: inline-block;
+}
+
+.faq .accordion-container .accordion.active .accordion-heading{
+   background: var(--red);
+}
+
+.faq .accordion-container .accordion.active .accordion-heading i{
+   transform: rotate(180deg);
+}
+
+.footer .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.footer .box-container .box{
+   padding:2rem;
+   text-align: center;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+}
+
+.footer .box-container .box i{
+   height: 6rem;
+   width: 6rem;
+   line-height: 6rem;
+   font-size: 2rem;
+   color:var(--white);
+   background-color: var(--red);
+   border-radius: 50%;
+   margin-bottom: .5rem;
+}
+
+.footer .box-container .box h3{
+   margin:1rem 0;
+   color:var(--black);
+   text-transform: capitalize;
+   font-size: 2rem;
+}
+
+.footer .box-container .box p{
+   line-height: 2;
+   font-size: 1.6rem;
+   color:var(--light-color);
+}
+
+.footer .credit{
+   text-align: center;
+   margin-top: 3rem;
+   padding:1rem 0;
+   padding-top: 3rem;
+   border-top: var(--border);
+   font-size: 2rem;
+   color:var(--black);
+   /* padding-bottom: 8rem; */
+}
+
+.footer .credit span{
+   color: var(--red);
+}
+
+
+/* menu */
+.display-orders h1{
+   text-align: center;
+}
+
+.card{
+   width: 350px;
+   height: 400px;
+   display: inline-block;
+   box-shadow: var(--box-shadow);
+   background-color: white;
+   margin: 0;
+   padding: 0;
+}
+
+.image img{
+   width: 350px;
+   height: 300px;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+}
+
+.card .title h1{
+   font-size: 20px;
+   text-align: center;
+}
+
+.card .description p{
+   text-align: justify;
+}
+
+.card .buttons{
+   margin-left: 138px;
+}
+
+.display-orders h1{
+   font-size: 30px;
+}
+
+.one, .two, .four, .five, .seven, .eight, .ten, .eleven, .thirteen, .fourteen{
+   margin-right: 12px;
+}
+
+button {
+   appearance: none;
+   background-color: #fff;
+   margin: 0;
+   accent-color: #694126;
+   width: 1.75em;
+   height: 1.75em;
+   border: 0.15em solid;
+   border-radius: 50%;
+}
+
+
+

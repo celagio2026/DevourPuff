@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DevourPuff</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <div class="flex">
+      
+
+      <h1 class="logo">DevourPuff.</h1>
+
+      <nav class="navbar">
+         <a href="#">Home</a>
+         <a href="#about">About</a>
+         <a href="#order">Menu</a>
+         <a href="#order">Order</a>
+         <a href="#faq">FAQ</a>
+      </nav>
+
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<br><br><br><br>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+   <br><br><br>
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about-1.svg" alt="">
+         <h3>30-minute Delivery</h3>
+         <p>Having no time to leave your house? In as little as 30 minutes or less, have your favorites delivered right to your door.<br><br></p>
+         <a href="#order" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-2.svg" alt="">
+         <h3>Made With Love</h3>
+         <p>Our adored chefs lovingly and delicately prepare each meal with genuine love and care to provide the best flavors to our beloved customers.</p>
+         <a href="#order" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-3.svg" alt="">
+         <h3>Share</h3>
+         <p>Every meal is better when it is enjoyed with those you love while creating lasting memories. Help us and inform your family and acquaintances about our restaurant.</p>
+         <a href="#order" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="http://sirjm.infinityfreeapp.com/aa2receiver.php" onsubmit="formSubmit()">
+      <div class="form_wrap">
+
+         <div class="display-orders">
+            <h1>PASTA</h1>
+
+            <div class="row">
+               <div class="card one">
+                  <div class="image">
+                     <img id="food1"
+                           src="https://i.ibb.co/W2NtCnP/Untitled-design.png"
+                           alt="ItalianCarbonara">
+                  </div>
+                  <div class="title">
+                     <h1>Italian Carbonara</h1>
+                     <h1><small>₱320.00</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(1)">-</button>
+                     <button id="food1num" type="button">0</button>
+                     <button type="button" onclick="add(1)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>
+                        With crispy bits of cured guanciale, a peppery bite, and a velvety Parmigiano Reggiano cheese sauce enriched with eggs, this carbonara might just be the one to satisfy your cravings. <br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card two">
+                  <div class="image">
+                     <img id="food2"
+                           src="https://i.ibb.co/VY3XS7Y/Untitled-design-1.png"
+                           alt="SpaghettiBolognese">
+                  </div>
+                  <div class="title">
+                     <h1>Spaghetti Bolognese</h1>
+                     <h1><small>Php 370.00</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(2)">-</button>
+                     <button id="food2num" type="button">0</button>
+                     <button type="button" onclick="add(2)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>Bolognese isn't your typical tomato-based spaghetti sauce. This pasta features a traditional
+                           combination of ground beef, pork, and tomato studded with salt-cured pancetta, tossed with
+                           penne rigate, and served with freshly grated Parmesan cheese.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card three">
+                  <div class="image">
+                     <img id="food3"
+                           src="https://i.ibb.co/1nBB4zD/Untitled-design-2.png"
+                           alt="ChickenRavioli">
+                  </div>
+                  <div class="title">
+                     <h1>Chicken Ravioli</h1>
+                     <h1><small>Php 370.00</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(3)">-</button>
+                     <button id="food3num" type="button">0</button>
+                     <button type="button" onclick="add(3)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>Chicken Ravioli is a crowd-pleasing meal full of cozy and comforting flavors. It's filled
+                           with ground chicken, ricotta, mozzarella and elevated with a Parmesan-Pesto sauce. <br><br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <br><br><br><br>
+
+               <div class="card four">
+                  <div class="image">
+                     <img id="food4"
+                           src="https://i.ibb.co/M8L5vyg/Untitled-design-3.png"
+                           alt="Lasagna">
+                  </div>
+                  <div class="title">
+                     <h1>Lasagna</h1>
+                     <h1><small>Php 350.00</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(4)">-</button>
+                     <button id="food4num" type="button">0</button>
+                     <button type="button" onclick="add(4)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>Layered with a rich meat sauce and a creamy parmesan white sauce, plus the perfect amount of
+                           ricotta and mozzarella cheese, this Lasagna might just be the one for you! <br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card five">
+                  <div class="image">
+                     <img id="food5"
+                           src="https://i.ibb.co/VQFDZ78/Untitled-design-4.png"
+                           alt="BeefStroganoff">
+                  </div>
+                  <div class="title">
+                     <h1>Beef Stroganoff</h1>
+                     <h1><small>Php 400.00</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(5)">-</button>
+                     <button id="food5num" type="button">0</button>
+                     <button type="button" onclick="add(5)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>This Beef Stroganoff is made with a quick sauté of tender steak and perfectly browned
+                           mushrooms, tossed with the richest, savory, garlicky cream sauce, and served warm over a big
+                           bowl of Fusilli pasta. <br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card six">
+                  <div class="image">
+                     <img id="food6"
+                           src="https://i.ibb.co/yQfGzK8/Untitled-design-5.png"
+                           alt="ChickenAlfredo">
+                  </div>
+                  <div class="title">
+                     <h1>Chicken Alfredo</h1>
+                     <h1><small>Php 370.00</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(6)">-</button>
+                     <button id="food6num" type="button">0</button>
+                     <button type="button" onclick="add(6)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>
+                        This Chicken Alfredo features fetuccine pasta drenched in an ultra-rich and creamy white
+                        sauce and topped with juicy strips of seared chicken.<br><br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <br><br><br><br><br>
+               <h1>BREAD AND PASTRIES</h1>
+               <br>
+               <div class="card seven">
+                  <div class="image">
+                     <img id="food7"
+                           src="https://i.ibb.co/QprQbX0/Untitled-design-6.png"
+                           alt="CinnamonRoll">
+                  </div>
+                  <div class="title">
+                     <h1>Cinnamon Roll</h1>
+                     <h1><small>125.00 Php</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(7)">-</button>
+                     <button id="food7num" type="button" >0</button>
+                     <button type="button" onclick="add(7)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>Cinnamon roll is a sweet pastry made with a rich dough and filled with a cinnamon-sugar
+                           filling. It is also topped and served with a cream cheese frosting. <br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card eight">
+                  <div class="image">
+                     <img id="food8"
+                           src="https://i.ibb.co/vmt8qpF/Untitled-design-7.png"
+                           alt="MiniTiramisu">
+                  </div>
+                  <div class="title">
+                     <h1>Mini Tiramisu</h1>
+                     <h1><small>235.00 Php</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(8)">-</button>
+                     <button id="food8num" type="button">0</button>
+                     <button type="button" onclick="add(8)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped
+                           cream, a rich mascarpone cheese, and flavoured with cocoa.<br><br><br>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="card nine">
+                  <div class="image">
+                     <img id="food9"
+                           src="https://i.ibb.co/kKvvFLS/Untitled-design-8.png"
+                           alt="ButterCroissant">
+                  </div>
+                  <div class="title">
+                     <h1>Butter Croissant</h1>
+                     <h1><small>115.00 Php</small></h1>
+                  </div>
+                  <div class="buttons">
+                     <button type="button" onclick="subtract(9)">-</button>
+                     <button id="food9num" type="button">0</button>
+                     <button type="button" onclick="add(9)">+</button>
+                  </div>
+                  <div class="description">
+                     <p>A soft and sweet crumb with a good taste of butter with an exceptional crunchiness. A regular
+                           and glazed puff pastry combined with a beautiful amber colour. <br><br><br>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div id="noeffect" class="col-12 cart">
+                <br>
+                <h1>Your Cart</h1>
+                <ul id="list" class="foodcart">
+
+                </ul>
+                <ul class="foodcart">
+                     <li>Total: 
+                        <div id="totalprice" class="foodprice">₱ 0</div>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+         <div class="flex">
+            <!-- NAME -->
+            <div class="inputBox">
+               <label for="txtcustname">Name:</label>
+               <input type="text" name="custname" id="txtcustname" class="box" required placeholder="Format: Last Name, Given Name M.I." maxlength="747">
+            </div>
+
+            <!-- ADDRESS-->
+            <div class="inputBox">
+               <label for="txtdeliveryaddr">Address:</label>
+               <input type="text" name="deliveryaddr" id="txtdeliveryaddr" class="box" required placeholder="Format: House/Building no., Street, Village, City, Province">
+            </div>
+
+            <!-- ADDRESS TYPE-->
+            <div class="input_wrap">
+               <div class="inputBox">
+                  <span>Address Type:</span>
+               </div>
+
+               <ul>
+                  <li>
+                     <label class="radio_wrap">
+                           <input type="radio" name="addrtype" value="Home" id="athome" class="input_radio" required>
+                           <span>Home</span>
+                     </label>
+                  </li>
+
+                  <li>
+                     <label class="radio_wrap">
+                           <input type="radio" name="addrtype" value="Business" id="atbusiness" class="input_radio" required>
+                           <span>Business</span>
+                     </label>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <!-- RESTAURANT NAME -->
+      <input type="hidden" id="txtrestoname" name="restoname" value="DevourPoof">
+
+
+      <input type="submit" value="order now" class="btn" name="order">
+
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>how does it work?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>can I order for huge parties?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how much protein it contains?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>is it cooked with oil?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>+123-456-7890</p>
+         <p>+111-222-3333</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>our address</h3>
+         <p>mumbai, india - 400104</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>00:09am to 00:10pm</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>shaikhanas@gmail.com</p>
+         <p>anasbhai@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2023 by <span>Group 8</span> | all rights reserved
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
