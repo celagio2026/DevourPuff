@@ -8,106 +8,106 @@ accordion.forEach(acco => {
 });
 
 /* menu */
-var a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j = 0, k = 0, l = 0, foodname = 0, foodprice = 0, totalfoodprice = 0, foodcart = [];
+var a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0, h = 0, i = 0, j = 0, k = 0, l = 0, name = 0, price = 0, totalfoodprice = 0, puffcart = [];
 function formSubmit() {
     while (a > 0) {
-        var foodcartobject1 = {
-            foodname: "Italian Carbonara",
-            foodprice: 320,
+        var puffcart1 = {
+            name: "Italian Carbonara",
+            price: 320,
         }
-        foodcart.push(foodcartobject1);
+        puffcart.push(puffcart1);
         a--;
     }
     while (b > 0) {
-        var foodcartobject2 = {
-            foodname: "Spaghetti Bolognese",
-            foodprice: 370,
+        var puffcart2 = {
+            name: "Spaghetti Bolognese",
+            price: 370,
         }
-        foodcart.push(foodcartobject2);
+        puffcart.push(puffcart2);
         b--;
     }
     while (c > 0) {
-        var foodcartobject3 = {
-            foodname: "Chicken Ravioli",
-            foodprice: 370,
+        var puffcart3 = {
+            name: "Chicken Ravioli",
+            price: 370,
         }
-        foodcart.push(foodcartobject3);
+        puffcart.push(puffcart3);
         c--;
     }
     while (d > 0) {
-        var foodcartobject4 = {
-            foodname: "Lasagna",
-            foodprice: 350,
+        var puffcart4 = {
+            name: "Lasagna",
+            price: 350,
         }
-        foodcart.push(foodcartobject4);
+        puffcart.push(puffcart4);
         d--;
     }
     while (e > 0) {
-        var foodcartobject5 = {
-            foodname: "Beef Stroganoff",
-            foodprice: 400,
+        var puffcart5 = {
+            name: "Beef Stroganoff",
+            price: 400,
         }
-        foodcart.push(foodcartobject5);
+        puffcart.push(puffcart5);
         e--;
     }
     while (f > 0) {
-        var foodcartobject6 = {
-            foodname: "Chicken Alfredo",
-            foodprice: 370,
+        var puffcart6 = {
+            name: "Chicken Alfredo",
+            price: 370,
         }
-        foodcart.push(foodcartobject6);
+        puffcart.push(puffcart6);
         f--;
     }
     while (g > 0) {
-        var foodcartobject7 = {
-            foodname: "Cinnamon Roll",
-            foodprice: 125,
+        var puffcart7 = {
+            name: "Cinnamon Roll",
+            price: 125,
         }
-        foodcart.push(foodcartobject7);
+        puffcart.push(puffcart7);
         g--;
     }
     while (h > 0) {
-        var foodcartobject8 = {
-            foodname: "Mini Tiramisu",
-            foodprice: 235,
+        var puffcart8 = {
+            name: "Mini Tiramisu",
+            price: 235,
         }
-        foodcart.push(foodcartobject8);
+        puffcart.push(puffcart8);
         h--;
     }
     while (i > 0) {
-        var foodcartobject9 = {
-            foodname: "Butter Croissant",
-            foodprice: 115,
+        var puffcart9 = {
+            name: "Butter Croissant",
+            price: 115,
         }
-        foodcart.push(foodcartobject9);
+        puffcart.push(puffcart9);
         i--;
     }
     while (j > 0) {
-        var foodcartobject10 = {
-            foodname: "Iced Shaken Dragon Tea",
-            foodprice: 195,
+        var puffcart10 = {
+            name: "Iced Shaken Dragon Tea",
+            price: 195,
         }
-        foodcart.push(foodcartobject10);
+        puffcart.push(puffcart10);
         j--;
     }
     while (k > 0) {
-        var foodcartobject11 = {
-            foodname: "Pistachio Cream Frapuccino",
-            foodprice: 265,
+        var puffcart11 = {
+            name: "Pistachio Cream Frapuccino",
+            price: 265,
         }
-        foodcart.push(foodcartobject11);
+        puffcart.push(puffcart11);
         k--;
     }
     while (l > 0) {
-        var foodcartobject12 = {
-            foodname: "Spanish Latte",
-            foodprice: 225,
+        var puffcart12 = {
+            name: "Spanish Latte",
+            price: 225,
         }
-        foodcart.push(foodcartobject12);
+        puffcart.push(puffcart12);
         l--;
     }
-    foodcartstring = JSON.stringify(foodcart);
-    document.getElementById('foodcart').value = JSON.stringify(foodcart);
+    puffcartstring = JSON.stringify(puffcart);
+    document.getElementById('puffcart').value = JSON.stringify(puffcart);
 }
 function add(x) {
     const divprice = document.createElement("div");
